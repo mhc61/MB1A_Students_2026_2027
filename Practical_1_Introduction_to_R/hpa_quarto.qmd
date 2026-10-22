@@ -1,0 +1,29 @@
+---
+title: "MB1A Practical 1 - brain data"
+author: "Megan Croxton"
+---
+
+I am calculating the total number of genes with regionally elevated expression in the forebrain in humans, pigs and mice.
+That is the cerebral cortex, basal ganglia, thalamus and hypothalamus.
+
+Human
+
+```{r}
+total_elevated_human <- sum(180, 83, 57, 110)
+print(total_elevated_human)
+```
+
+Pig
+
+```{r}
+total_elevated_pig <- sum(109, 157, 31, 45)
+print(total_elevated_pig)
+```
+
+Mouse
+
+```{r}
+total_elevated_mouse <- sum(55, 185, 60, 98)
+print(total_elevated_mouse)
+```
+The highest number of genes with elevated expression was in humans.
