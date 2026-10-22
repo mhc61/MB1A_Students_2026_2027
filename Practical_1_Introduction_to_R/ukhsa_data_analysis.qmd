@@ -1,0 +1,15 @@
+---
+title: "ukhsa_data_analysis"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+I selected rate of total antibiotic consumption
+```{r}
+antibiotics <- read_csv("data/ukhsa-chart-download.csv")
+
+gt(head(antibiotics))
+
+```
+

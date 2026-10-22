@@ -2,6 +2,10 @@
 title: "prac1_exercises"
 author: "Megan Croxton"
 ---
+```{r}
+library(tidyverse)
+library(gt)
+```
 
 ```{r}
 round(3.14159)
@@ -41,6 +45,33 @@ n_before_2 <- 8123
 
 n_after_1 <- 1432
 n_after_2 <- 7543
+
+```
+
+```{r}
+# vectors
+cell_ID_vector <- c(cell_id_1, cell_id_2)
+treated_vector <- c(treated_1, treated_2)
+n_before_vector <- c(n_before_1, n_before_2)
+n_after_vector <- c(n_after_1, n_after_2)
+
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+bird <- all_my_pets[4]
+print(bird)
+```
+```{r}
+# dataframe
+cells_id_dataframe <- tibble(
+  cell_ID = c("CX1", "CX2"),
+  treated = c(TRUE, FALSE),
+  n_before = c(5415, 8123),
+  n_after = c(1432, 7543)
+)
+
+gt(cells_id_dataframe)
+
 
 ```
 
