@@ -12,4 +12,15 @@ antibiotics <- read_csv("data/ukhsa-chart-download.csv")
 gt(head(antibiotics))
 
 ```
+```{r}
+ggplot(antibiotics, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "red") +
+  xlab("Date") +
+  ylab("DID (standard consumption)") +
+  ggtitle("Rate of total antibiotic consumption")
+
+```
 
